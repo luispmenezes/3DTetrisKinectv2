@@ -1,0 +1,20 @@
+﻿<Window x:Class="Microsoft.Samples.Kinect.BodyBasics.Menus.GameOverWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tetris 3D" Height="750" Width="950" ResizeMode="NoResize" Loaded="MainWindow_Loaded" Closing="MainWindow_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="wallpaperMain.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Button Content="Restart" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="139,415,558,176.8" Width="247" Height="129" FontSize="35" FontWeight="Bold" Foreground="White" Style="{StaticResource buttonStyle}" />
+        <Button Content="Exit" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="588,415,112,176.8" Width="244" Height="129" FontSize="35" FontWeight="Bold" Foreground="White" Style="{StaticResource buttonStyle}" />
+        <Label Content="Gameover!" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="247,24,219,567.8" FontSize="90" FontWeight="Bold" Foreground="White" FontStyle="Italic" Height="129" Width="478"/>
+        <Image x:Name="cursor" Width="100" Stretch="Fill" Margin="432,257,412,373.8"  >
+            <Image.Source>
+                <BitmapImage UriSource="hand.png"/>
+            </Image.Source>
+        </Image>
+        <Label x:Name="score" Content="100" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="376,174,306,401.8" FontSize="110" FontWeight="Bold" Foreground="White" FontStyle="Italic" Height="145" Width="262"/>
+        <Label x:Name="highscore" Content="New Highscore!" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="294,319,144,310.8" FontSize="50" FontWeight="Bold" Foreground="White" FontStyle="Italic" Height="91" Width="506" Opacity="0"/>
+    </Grid>
+</Window>
