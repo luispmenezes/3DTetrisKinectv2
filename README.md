@@ -12,6 +12,14 @@ With the advent of technologies applications must evolve to support them, and so
 * Users: every person with one computer with at least a dual core processor and one Usb 3.0 port, and one Kinect 2.0.
 * Typical tasks: start new game, move and rotate piece, see high score and change options.
 
+## The Game
+* Square three-dimensional playing board 6x6x6.
+* Seven different piece types same as classic Tetris (I, J, L, O, S, T, Z).
+* Each piece drops slowly over time and can be moved and rotated by the player.
+* If a falling piece touches the bottom of the board or other pieces it is set and a new piece appear at the top. 
+* When a X, Y 6x6 square is completed the score is increased and all the piece move down a unit.
+* If any part of a newly set piece exceeds the top of the playing board the game is over and the score is added to the high score list.
+
 ## Controls
 * Move your hand in an open position to move the cursor on the screen.
 * Make a closed fist on a menu button to select it.
